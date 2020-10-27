@@ -1,5 +1,16 @@
-@media (min-width: 320px) and (max-width: 480px) {
-  
-    
-    
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  div{
+    &.contenido-header{
+      padding-top: 40px !important;
+    }
+    &.informacion-evento{ 
+      .datos{
+        flex-wrap: wrap;
+        
+      }
+    }
   }
+}

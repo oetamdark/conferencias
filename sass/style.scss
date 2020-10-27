@@ -1,28 +1,50 @@
-
-@import "base" ;
-  
+@import "base";
 div {
-  &.hero{
-    background-image: url(../img/encabezado.jpg) ;
+  &.hero {
+    background-image: url(../img/encabezado.jpg);
     background-size: cover;
     background-position: top center;
     height: 100vh;
   }
-  &.contenido-header{
-    padding-top: 40px;
+  &.contenido-header {
+    padding-top: 20px;
   }
-  & nav{
-    &.redes-sociales{
+  & nav {
+    &.redes-sociales {
       text-align: center;
-        a{
-          color: #ffffff;
-          font-size: 2rem;
-          margin-right: 20px;
-          &:last-child{
-            margin-right: 0;
-          }
+      a {
+        color: $white;
+        font-size: 2rem;
+        margin-right: 20px;
+        &:last-child {
+          margin-right: 0;
         }
+      }
+    }
+  }
+  &.informacion-evento {
+    margin-top: 50px;
+    text-align: center;
+    color: $white;
+    .datos {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
+      margin: 0 auto;
+      p {
+        margin: 0 10px;
+        display: inline;
+        font-size: 20px;
+        text-transform: uppercase;
+        i {
+          color: #fe4918;
+        }
+      }
+    }
+  }
+  & h1 {
+    .nombre-sitio {
+      font-family: $font-terciaria;
     }
   }
 }
-

@@ -73,18 +73,56 @@ div {
   &.barra{
     background-color: #353535;
     padding: 20px 0;
-   /*  display: flex;
-    justify-content: space-evenly;
-    .logo{
-      img{
-        width: 80%;
-      }
-     
-    } */
     .contenedor{
       .flex{
         display: flex;
         justify-content: space-between;
+        .logo{
+          width: 80%;
+          img{
+            width:60% ;
+          }
+        }
+        .navegacion-principal{
+          display: none;
+          width: 65%;
+          a{
+            font-family: $font-segundaria;
+            color: $white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: 1.2rem;
+            line-height: 50px;
+            padding: 10px 20px;
+            transition:  all .3s ease-in;
+              &:hover{
+                background-color:#fe4918;
+              }
+              &:last-child{
+                border: 1px solid #fe4918 ;
+                color:#fe4918;
+                &:hover{
+                  color: $white;
+                }
+              }
+          }
+        }
+        .menu-mobile{
+          width: 60px;
+          display: none;
+          text-align: right;
+          margin-top: 12px;
+          &:hover{
+            cursor: pointer;
+          }
+          span{
+            height: 8px;
+            margin-bottom: 6px;
+            background-color: $white;
+            display: block;
+          }
+
+        }
       }
     }
   }

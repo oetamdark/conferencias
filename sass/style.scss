@@ -73,13 +73,19 @@ div {
   &.barra{
     background-color: #353535;
     padding: 20px 0;
-    display: flex;
+   /*  display: flex;
     justify-content: space-evenly;
     .logo{
       img{
         width: 80%;
       }
      
+    } */
+    .contenedor{
+      .flex{
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
  

@@ -77,6 +77,7 @@ div {
       .flex{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         .logo{
           width: 80%;
           img{
@@ -84,8 +85,7 @@ div {
           }
         }
         .navegacion-principal{
-          display: none;
-          width: 65%;
+          width: 70%;
           a{
             font-family: $font-segundaria;
             color: $white;
@@ -108,7 +108,7 @@ div {
           }
         }
         .menu-mobile{
-          width: 60px;
+          width: 50px;
           display: none;
           text-align: right;
           margin-top: 12px;
@@ -116,7 +116,7 @@ div {
             cursor: pointer;
           }
           span{
-            height: 8px;
+            height: 5px;
             margin-bottom: 6px;
             background-color: $white;
             display: block;

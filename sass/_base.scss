@@ -1,4 +1,4 @@
-@import "variables" ;
+@import "variables";
 
 html {
     box-sizing: border-box;
@@ -20,3 +20,6 @@ html {
   img{
     max-width: 100%;
   }
+  h1 , h2, h3,p{
+    text-align: center;
+  } 

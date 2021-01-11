@@ -29,11 +29,22 @@
     &.barra {
       .contenedor {
         .flex {
-          align-items: center;
+          flex-wrap: wrap;
           .logo {
             width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             img {
               width: 85%;
+            }
+          }
+          .navegacion-principal{
+            display: none;
+            width: 100%;
+            a{
+              display: inherit;
+              text-align: center;
             }
           }
           .menu-mobile {
@@ -55,53 +66,36 @@
       .contenedor {
         .flex {
           .logo {
-            width: 60%;
+           // width: 60%;
             img {
-              width: 80%;
+              width: 60%;
             }
           }
         }
       }
-
-      .contenedor {
-        .flex {
           .navegacion-principal {
-            display: none;
           }
           .menu-mobile {
-            display: block;
+           // display: block;
           }
-        }
-      }
+
     }
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 3840px) {
   .contenedor {
-    width: 90%;
-    max-width: 1200px;
+    width: 80%;
+    //max-width: 3840px;
   }
   div {
     &.barra {
-      .contenedor {
-        .flex {
-          .logo {
-            img {
-              width: 100%;
-            }
-          }
-
           .navegacion-principal {
             display: block;
             text-align: right;
             width: 75%;
             flex-shrink: 0;
           }
-          .menu-mobile {
-            display: none;
-          }
-        }
-      }
+
     }
   }
 }

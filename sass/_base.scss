@@ -22,6 +22,9 @@ html {
   }
   h1 , h2, h3,p{
     text-align: center;
+  }
+  i{
+   
   } 
   .seccion{
     padding: 30px 0;
@@ -39,4 +42,31 @@ html {
       display: block;
     }
 
+  }
+  h3{
+    font-size:1.8em ;
+    color: $orange;
+    font-family: $font-terciaria;
+    margin: 0;
+
+  }
+  .button{
+    text-decoration: none;
+    background-color: $orange;
+    color: $white;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: $font-segundaria;
+    font-size: 1em;
+    margin-top: 35px;
+    display: inline-block;
+    transition: all 0.4s ease-in;
+     &:hover{
+       background-color: #e33000;
+     }
+  }
+  .float-right{
+    float: right;;
   }

@@ -111,8 +111,8 @@
     width: 90%;
   }
 
-  div {
-    &.barra {
+
+    .barra {
       .contenedor {
         .flex {
           .logo {
@@ -129,7 +129,7 @@
         // display: block;
       }
     }
-  }
+
 
   section {
     &.programa {

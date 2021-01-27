@@ -242,5 +242,37 @@ nav {
     }
   }
 }
+// contador
+.parallax{
+  &::before{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+  }
+}
+.contador{
+  position: relative;
+  height: auto;
+  &::before{
+    content: '';
+    background-image:url(../img/bg-resumen.jpg) ;
+  }
+  ul{
+    position: relative;
+    padding: 120px 0;
+    display: flex;
+    justify-content: space-between;
+      li{
+        text-transform: uppercase;
+        color: $white;
+      }
+  }
+}
 
 @import "mq";

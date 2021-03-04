@@ -1,115 +1,15 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
-  .contenedor {
-    width: 95%;
-  }
-  h2{
-    font-size: 2em;
-  }
-  .button {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
 
-  .contenido-header {
-    padding-top: 40px;
-    .redes-sociales {
-      a {
-        font-size: 1.5rem;
-      }
-    }
-  }
   .informacion-evento {
     /*       height: 75vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-end; */
-    .datos {
-      flex-direction: column;
-    }
-    h1 {
-      &.nombre-sitio {
-        font-size: 15vw;
-      }
-    }
-    p {
-      &.slogan {
-        font-size: 1.1rem;
-      }
-    }
   }
-  .barra {
-    .contenedor {
-      .flex {
-        flex-wrap: wrap;
-        .logo {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          img {
-            width: 85%;
-          }
-        }
-        .navegacion-principal {
-          display: none;
-          width: 100%;
-          a {
-            display: inherit;
-            text-align: center;
-          }
-        }
-        .menu-mobile {
-          display: block;
-        }
-      }
-    }
-  }
-  section {
-    &.programa {
-      position: relative;
-    }
-    .contenedor-video {
-      max-width: 100%;
-    }
-    .contenido-programa {
-      height: 100%;
-      width: 100%;
-    }
-    .programa-evento {
-      width: 100%;
-      margin-top: 20px;
-      p {
-        text-align: center;
-      }
-      h3 {
-        text-align: center;
-      }
-    }
-    .menu-programa {
-      flex-direction: column;
 
-      a {
-        display: block;
-        padding-top: 10px;
-      }
-    }
-  }
-  .invitados {
-    ul {
-      flex-direction: column;
-      li {
-        width: 100%;
-      }
-    }
-  }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .contenedor {
-    width: 90%;
-  }
 
 
     .barra {
@@ -180,3 +80,4 @@
       }
     }
 }
+

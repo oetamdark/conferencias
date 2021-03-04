@@ -1,49 +1,25 @@
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 
   .informacion-evento {
-    /*       height: 75vh;
+          height: 75vh;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end; */
+      justify-content: flex-end; 
   }
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-
-
-    .barra {
-      .contenedor {
-        .flex {
-          .logo {
-            // width: 60%;
-            img {
-              width: 60%;
-            }
-          }
-        }
-      }
-      .navegacion-principal {
-      }
-      .menu-mobile {
-        // display: block;
-      }
-    }
-
-
   section {
-    &.programa {
-      position: relative;
-    }
     .contenedor-video {
       video {
-        width: 100vw;
-        height: 75vh;
+       // width: 100vw;
+        //height: 85vh;
       }
     }
     .contenido-programa {
-      height: 100%;
-      width: 100%;
+      // height: 100%;
+      // width: 100%;
     }
     .programa-evento {
       //width: 100%;

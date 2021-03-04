@@ -100,10 +100,19 @@
           align-items: center;
           justify-content: space-between;
           }
+          @include sm{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+          }
           img {
             width: 80%;
             @include xs {
               width: 85%;
+            }
+            @include sm {
+              width: 60%;
             }
           }
         }
@@ -112,6 +121,9 @@
           @include xs {
             display: none;
             width: 100%;
+          }         
+         @include sm {
+            display: none;
           }
           a {
             font-family: $font-segundaria;
@@ -153,6 +165,9 @@
             display: block;
           }
           @include xs {
+            display: block;
+          }
+          @include sm {
             display: block;
           }
         }

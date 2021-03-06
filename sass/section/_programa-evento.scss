@@ -52,6 +52,9 @@
     @include xs{
       flex-direction: column;
     }
+    @include sm{
+      flex-direction: row;
+    }
     a {
       display: inline-block;
       text-align: center;

@@ -10,36 +10,7 @@
 
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  section {
-    .contenedor-video {
-      video {
-       // width: 100vw;
-        //height: 85vh;
-      }
-    }
-    .contenido-programa {
-      // height: 100%;
-      // width: 100%;
-    }
-    .programa-evento {
-      //width: 100%;
 
-      a {
-        display: inline-block;
-      }
-      .menu-programa {
-        flex-direction: row;
-      }
-    }
-  }
-  .invitados {
-    ul {
-      flex-direction: row;
-      li {
-        width: calc(100% / 2);
-      }
-    }
-  }
 }
 @media only screen and (min-width: 1024px) and (max-width: 3840px) {
   .contenedor {

@@ -4,46 +4,57 @@
 html {
   box-sizing: border-box;
 }
+
 *,
 *:before,
 *:after {
   box-sizing: inherit;
 }
+
 body {
   background-color: #f2f2f2;
   font-family: $font-primaria;
 }
+
 h2 {
   font-family: $font-terciaria;
 }
+
 .contenedor {
   width: 98%;
   margin: 0 auto;
-  @include xs{
+
+  @include xs {
     width: 95%;
   }
-  @include sm{
+
+  @include sm {
     width: 90%;
   }
 }
+
 img {
   max-width: 100%;
 }
+
 h1,
 h2,
 h3,
 p {
   text-align: center;
 }
-i {
-}
+
+i {}
+
 .seccion {
   padding: 30px 0;
 }
+
 h2 {
   font-family: $font-segundaria;
   font-size: 2.4em;
   text-transform: uppercase;
+
   &::after {
     content: " ";
     margin: 0 auto 10px;
@@ -52,16 +63,19 @@ h2 {
     width: 100px;
     display: block;
   }
-  @include xs{
+
+  @include xs {
     font-size: 2em;
   }
 }
+
 h3 {
   font-size: 1.8em;
   color: $orange;
   font-family: $font-terciaria;
   margin: 0;
 }
+
 .button {
   text-decoration: none;
   background-color: $orange;
@@ -75,21 +89,26 @@ h3 {
   margin-top: 35px;
   display: inline-block;
   transition: all 0.4s ease-in;
+
   &:hover {
     background-color: #e33000;
   }
-  @include xs{
+
+  @include xs {
     text-align: center;
     margin: 0 auto;
     width: 100%;
   }
 }
+
 .float-right {
   float: right;
 }
+
 .float-left {
   float: left;
 }
+
 .flex {
   display: flex;
 }

@@ -1,5 +1,5 @@
-.parallax{
-  &::before{
+.parallax {
+  &::before {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -11,21 +11,25 @@
 
   }
 }
-.contador{
+
+.contador {
   position: relative;
   height: auto;
-  &::before{
+
+  &::before {
     content: '';
-    background-image:url(../img/bg-resumen.jpg) ;
+    background-image: url(../img/bg-resumen.jpg);
   }
-  ul{
+
+  ul {
     position: relative;
     padding: 120px 0;
     display: flex;
     justify-content: space-between;
-      li{
-        text-transform: uppercase;
-        color: $white;
-      }
+
+    li {
+      text-transform: uppercase;
+      color: $white;
+    }
   }
 }

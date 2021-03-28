@@ -1,0 +1,58 @@
+.lista-precios{
+    justify-content: space-between;
+    flex-wrap: wrap;
+    li{
+        @include sm {
+            width: 100%;
+            margin: 10px 0;
+        }       
+         @include xs {
+            width: 100%;
+            margin: 10px 0;
+        }
+        .tabla-precio{
+            border: 1px solid #e1e1e1;
+            background-color: #ffffff;
+            padding: 50px;
+            text-align: center;
+            h3{
+                font-family: $font-segundaria;
+                font-size: 20px;
+                text-transform: uppercase;
+                @include sm{
+                    font-size: 1.8em;
+                }
+            }
+            .numero{
+                color: #000000;
+                font-size: 4em;
+                display: block;
+                margin: 0 0 10px 0 ;
+                @include sm{
+                    font-size: 4.5em;
+                }
+            }
+            ul li{
+                text-transform: uppercase;
+                font-size: 14px;
+                font-family: $font-terciaria;
+                margin-bottom: 10px;
+                color: #868686;
+                line-height: 26px;
+                &::before{
+                    display: inline;
+                    vertical-align: top;
+                    font-size:20px;
+                    padding: 0 5px;
+                    color:green;
+                    content: '\f00c';
+                    -webkit-font-smoothing: antialiased;
+                }
+                @include sm{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    
+}

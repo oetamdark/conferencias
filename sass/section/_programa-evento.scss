@@ -5,7 +5,10 @@
 .contenedor-video {
   max-width: 100%;
   overflow-x: hidden;
-
+  @include xs {
+    max-height: 980px;
+  }
+  
   video {
     @include sm {
       height: 85vh;

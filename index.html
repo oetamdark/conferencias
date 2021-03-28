@@ -1,6 +1,4 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <title>Conferencias</title>
@@ -19,6 +17,8 @@
     rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+
   <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -122,37 +122,39 @@
     <ul class="lista-invitados">
       <li>
         <div class="invitado">
-          <img src="/img/invitado1.jpg" alt="Invitado N 1">
+          <a href="img/invitado1.jpg" data-fancybox="gallery" data-caption="Rafael Butista">
+            <img src="img/invitado1.jpg" alt="Invitado N 1">
+          </a>
           <p>Rafael Butista</p>
         </div>
       </li>
       <li>
         <div class="invitado">
-          <img src="/img/invitado2.jpg" alt="Invitado N 2">
+          <img src="img/invitado2.jpg" alt="Invitado N 2">
           <p>shari herrera</p>
         </div>
       </li>
       <li>
         <div class="invitado">
-          <img src="/img/invitado3.jpg" alt="Invitado N 3">
+          <img src="img/invitado3.jpg" alt="Invitado N 3">
           <p>Gregorio sanchez</p>
         </div>
       </li>
       <li>
         <div class="invitado">
-          <img src="/img/invitado4.jpg" alt="Invitado N 4">
+          <img src="img/invitado4.jpg" alt="Invitado N 4">
           <p>susana rivera</p>
         </div>
       </li>
       <li>
         <div class="invitado">
-          <img src="/img/invitado5.jpg" alt="Invitado N 5">
+          <img src="img/invitado5.jpg" alt="Invitado N 5">
           <p>Harold Garcia</p>
         </div>
       </li>
       <li>
         <div class="invitado">
-          <img src="/img/invitado6.jpg" alt="Invitado N 6">
+          <img src="img/invitado6.jpg" alt="Invitado N 6">
           <p>Susan Sanchez</p>
         </div>
       </li>
@@ -180,6 +182,51 @@
     </div>
   </section>
 
+  <seccion class="precios seccion">
+    <h2>Precios</h2>
+     <div class="contenedor">
+       <ul class="lista-precios  flex clearfix">
+         <li>
+           <div class="tabla-precio">
+             <h3>Pase por dia</h3>
+             <p class="numero">$30</p>
+             <ul>
+               <li>Bocadillos Gratis</li>
+               <li>Todas las Conferencias</li>
+               <li>Todos los Talleres</li>
+             </ul>
+             <a href="" class="button hollow">Comprar</a>
+           </div>
+         </li>
+
+         <li>
+          <div class="tabla-precio">
+            <h3>Pase por dia</h3>
+            <p class="numero">$50</p>
+            <ul>
+              <li>Todos los Dias</li>
+              <li>Todas las Conferencias</li>
+              <li>Todos los Talleres</li>
+            </ul>
+            <a href="" class="button hollow">Comprar</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="tabla-precio">
+            <h3>Pase por 2 Dias</h3>
+            <p class="numero">$45</p>
+            <ul>
+              <li>Bocadillos Gratis</li>
+              <li>Todas las Conferencias</li>
+              <li>Todos los Talleres</li>
+            </ul>
+            <a href="" class="button hollow">Comprar</a>
+          </div>
+        </li>
+       </ul>
+     </div>
+  </seccion>
 
 
 
@@ -195,6 +242,7 @@
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
+    <script src="js/vendor/jquery.fancybox.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>

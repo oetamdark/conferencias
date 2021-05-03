@@ -2,7 +2,13 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 100px ;
+    @include md {
+        flex-wrap: nowrap;
+    }  
     li{
+        @include md {
+            margin: 0 5px;
+        }  
         @include sm {
             width: 100%;
             margin: 10px 0;
@@ -16,6 +22,15 @@
             background-color: #ffffff;
             padding: 50px;
             text-align: center;
+            transition: all .5s ease;
+            @include md {
+               padding: 50px 30px;
+            } 
+            &:hover{
+                transform: scale(1.1);
+                border: 1px solid $orange;
+                box-shadow: 0 0 50px #666 ;
+            }
             h3{
                 font-family: $font-segundaria;
                 font-size: 20px;
@@ -29,6 +44,7 @@
                 font-size: 4em;
                 display: block;
                 margin: 0 0 10px 0 ;
+                font-weight: bold;
                 @include sm{
                     font-size: 4.5em;
                 }

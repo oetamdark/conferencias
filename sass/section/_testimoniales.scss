@@ -1,0 +1,81 @@
+.testimoniales{
+    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include sm {
+        flex-direction: column;
+    }
+    @include xs {
+        flex-direction: column;
+        width: 95%;
+    }
+    .testimonial{
+        margin: 0 10px;
+        blockquote{
+            background-color: $white;
+            border: 1px solid #e1e1e1;
+            position: relative;
+            margin:  0 0 10px 0;
+            padding-bottom: 20px;
+            p{
+                text-align: left;
+                font-size: 1em;
+                font-family: $font-terciaria;
+                font-style: italic;
+                padding: 0 20px 0 65px ;
+                &::before{
+                    content: '\201c';
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    font-size: 8rem;
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1;
+                    color: $orange;
+                }
+            }
+        }
+        .info-testimonial{
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            @include sm {
+                flex-direction: column;
+                align-self: center;
+            }
+
+            img{
+                border-radius: 50%;
+                width: 20%;
+                margin-left: 20px;
+                @include sm {
+                    margin: 15px 0;
+                }
+            }
+            cite{
+                text-align: left;
+                text-transform: uppercase;
+                color:$orange;
+                width: 60%;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 12px;
+                @include sm {
+                    text-align: center;
+                    padding: 20px 0;
+                }
+                span{
+                    display: block;
+                    text-transform: lowercase;
+                    color:#000000;
+                }
+            }
+        }
+    }
+   
+}

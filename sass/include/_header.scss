@@ -3,6 +3,7 @@
   background-size: cover;
   background-position: top center;
   height: 100vh;
+  //@extend .bg-animation;
 }
 
 .contenido-header {
@@ -77,6 +78,7 @@ nav {
       font-size: 11.5vw;
       margin: 0;
       line-height: 1;
+      @extend .animation-title;
 
       @include xs {
         font-size: 15vw;
@@ -159,7 +161,7 @@ nav {
           font-size: 1.2rem;
           line-height: 50px;
           padding: 10px 20px;
-          transition: all 0.3s ease-in;
+          transition: all 0.5s ease-in;
 
           &:hover {
             background-color: #fe4918;
@@ -211,6 +213,9 @@ nav {
 }
 
 .seccion {
+  h2{
+    @extend .animation-title;
+  }
   p {
     font-size: 1.2em;
   }

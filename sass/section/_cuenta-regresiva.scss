@@ -1,0 +1,15 @@
+.cuenta-regresiva{
+    ul{
+        display: flex;
+        justify-content: space-between;
+        @include xs {
+            flex-direction: column;
+        }
+        li{
+            text-transform: uppercase;
+            font-family: $font-segundaria;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+}
